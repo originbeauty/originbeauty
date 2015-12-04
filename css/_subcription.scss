@@ -1,0 +1,54 @@
+.subcription{
+	background-image: url(../img/header_bg.png);
+	padding: 20px;
+	.join-text{
+		//margin-left: 50px;
+		h2{
+			color: #e1b983;
+			font-size: 36px;
+			font-family: 'Gotham-bold';
+			text-transform: uppercase;
+			margin-top: 48px;
+		}
+		h3{
+			color: #fff;
+			font-size: 16px;
+			font-family: 'Gotham-book';
+			text-transform: uppercase;
+		}
+		p{
+			margin-top: 10px;
+			color: #fff;
+			font-size: 12px;
+			font-family: 'Gotham-book';
+			font-style: italic;
+			width: 500px;
+			text-align: justify;
+			line-height: 1.2;
+
+		}
+	}
+	.sign-up{
+		border: 3px solid #e1b983;
+		padding: 20px;
+		margin-top: 20px;
+		.form--group{
+			input{
+				width: 200px;
+			}
+			
+		}
+		
+	}
+	.btn-custom{
+			color: #789c48;
+			font-family: 'Gotham-bold';
+			font-size: 21px;
+			background-color: #e1b983;
+			width: 125px;
+			position: relative;
+			top: -25px;
+			text-transform: uppercase;
+
+		}
+}

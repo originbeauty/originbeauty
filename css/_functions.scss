@@ -1,0 +1,51 @@
+
+//text-shadow
+@function makelongshadow($color) {
+  $val: 0px 0px $color;
+  @for $i from 1 through 200 {
+    $val: #{$val}, #{$i}px #{$i}px #{$color};
+  }
+  @return $val;
+}
+
+
+
+    
+@font-face {
+    font-family: Gotham-black;
+    src: url(../fonts/gotham-black-webfont.eot);
+    src: url(../fonts/gotham-black-webfont.svg);
+    src: url(../fonts/gotham-black-webfont.ttf);
+    src: url(../fonts/gotham-black-webfont.woff);
+}
+@font-face {
+    font-family: Gotham-bold;
+    src: url(../fonts/gotham-bold-webfont.eot);
+    src: url(../fonts/gotham-bold-webfont.svg);
+    src: url(../fonts/gotham-bold-webfont.ttf);
+    src: url(../fonts/gotham-bold-webfont.woff);
+}
+
+@font-face {
+    font-family: Gotham-book;
+    src: url(../fonts/gotham-book-webfont.eot);
+    src: url(../fonts/gotham-book-webfont.svg);
+    src: url(../fonts/gotham-book-webfont.ttf);
+    src: url(../fonts/gotham-book-webfont.woff);
+}
+
+@font-face {
+    font-family: Gotham-light;
+    src: url(../fonts/gotham-light-webfont.eot);
+    src: url(../fonts/gotham-light-webfont.svg);
+    src: url(../fonts/gotham-light-webfont.ttf);
+    src: url(../fonts/gotham-light-webfont.woff);
+}
+
+@font-face {
+    font-family: Gotham-medium;
+    src: url(../fonts/gotham-medium-webfont.eot);
+    src: url(../fonts/gotham-medium-webfont.svg);
+    src: url(../fonts/gotham-medium-webfont.ttf);
+    src: url(../fonts/gotham-medium-webfont.woff);
+}

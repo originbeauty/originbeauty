@@ -1,0 +1,122 @@
+
+@mixin borderradius($radius) {
+	-o-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin antialiasing( $type:antialiased ) {
+  /* antialiased, none, subpixel-antialiased*/
+	-webkit-font-smoothing: $type;
+	-moz-font-smoothing: $type;
+	font-smoothing: $type;
+	font-smooth: always;
+}
+
+
+
+//media query size
+$mobile-xs: 320px;
+$mobile-sm: 480px;
+$tablet: 768px;
+$desktop-md: 992px;
+$desktop-lg: 1200px;
+
+
+@mixin mobile-xs {
+	@media (min-width: #{$mobile-xs }) and (max-width: #{$mobile-sm - 1px}){
+		@content;
+	}
+}
+
+@mixin mobile-sm {
+	@media (min-width: #{$mobile-sm}) and (max-width: #{$tablet - 1px}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: #{$tablet}) and (max-width: #{$desktop-md - 1px}) {
+		@content;
+	}
+}
+
+@mixin desktop-md {
+	@media (min-width: #{$desktop-md}) {
+		@content;
+	}
+}
+
+@mixin desktop-lg {
+	@media (min-width: #{$desktop-lg}) {
+		@content;
+	}
+}
+
+
+//Animation Elements
+
+//Fade-in
+@keyframes fadeIn {from {opacity: 0;} to {opacity:1;} }
+@-webkit-keyframes fadeIn {from {opacity: 0;} to {opacity:1;} }
+@-moz-keyframes fadeIn {from {opacity: 0;} to {opacity:1;} }
+
+
+@mixin fade-in {
+	opacity: 0;
+
+	animation: fadeIn ease-in 1;
+	-webkit-animation: fadeIn ease-in 1;
+	-moz-animation: fadeIn ease-in 1;
+
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+
+}
+
+
+// fade-out
+
+@keyframes fadeOut {from {opacity: 1;} to {opacity:0;} }
+@-webkit-keyframes fadeOut {from {opacity: 1;} to {opacity:0;} }
+@-moz-keyframes fadeOut {from {opacity: 1} to {opacity:0;} }
+
+
+@mixin fade-out {
+	opacity: 1;
+
+	animation: fadeOut ease-in 1;
+	-webkit-animation: fadeOut ease-in 1;
+	-moz-animation: fadeOut ease-in 1;
+
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+
+}
+
+@mixin fixed-bg {
+	-webkit-background-attachment : fixed;
+	-moz-background-attachment : fixed;
+	background-attachment : fixed;
+}
+@mixin fixed {
+	position: fixed;
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	padding:0;
+	overflow: hidden;
+}
+

@@ -1,0 +1,67 @@
+.rotate-banner {
+	background: {
+		image: url(../img/banner_bg.png);
+		size: cover;
+		repeat: no-repeat;
+	}
+	.caption {
+		h2{
+			font-family: 'Gotham-bold';
+			font-size: 32px;
+			width: 375px;
+			margin-left: 120px;
+			color: #383838;
+			text-transform: uppercase;
+			margin-top: 40px;
+		}
+		p{
+			margin-left: 120px;
+			width: 300px;
+			font-family: 'Gotham-book';
+			font-size: 16px;
+			line-height: 1;
+			color: #383838;
+			margin-top: 40px;
+		}
+	}
+	.btn {
+		margin-left: 120px;
+		margin-top: 40px;
+		background-color: #383838;
+		width: 228px;
+		height: 60px;
+		font-family: 'Gotham-bold';
+		font-size: 22px;
+		color: #fff;
+		text-transform: uppercase;
+	}
+	.carousel-image {
+		margin-right: 50px;
+	}
+	.arrow-left {
+		background-image: url(../img/left.png);
+		width: 39px;
+		height: 88px;
+		position: relative;
+		top: 150px;
+	}
+	.carousel-control.left {
+	background-image:none;
+	}
+
+	.arrow-right {
+		background-image: url(../img/arrow_right.png);
+		@extend .arrow-left;
+	}
+	.carousel-control.right {
+	background-image:none;
+	}
+	.carousel-indicators{
+		.active {
+			background-color: #e1b983;
+		}
+		li{
+			background-color: #959595;
+		}
+	}
+}

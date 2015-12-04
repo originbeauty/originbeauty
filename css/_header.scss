@@ -1,0 +1,98 @@
+.header-wrapper {
+	background-image: url(../img/header_bg.png);
+	height: 150px;
+	border-bottom: 5px solid #e1b984;
+	p.logo{
+		background-image: url(../img/logo.png);
+		background-repeat: no-repeat;
+		width: 325px;
+		height: 82px;
+		font-size: 0;
+	}
+	ul.nav {
+		position: relative;
+		top: -30px;
+		left: 55px;
+		li > a{
+			color: #fff;
+			font-family: 'Gotham-bold';
+			font-size: 14px;
+			text-transform: uppercase;
+			margin-right: 60px;
+			@include transition(all 0.3s ease-in-out 0s);
+			&:hover {
+				color:  #595959;
+				@include borderradius(3px);
+
+
+			}
+		}
+	}
+
+}
+
+.navbar-header{
+	.ques{
+		position: relative;
+		right:  -700px;
+		//background-color: yellow;
+		width: 150px;
+		p{
+			text-align: right;
+		}
+		p:first-child{
+			margin-bottom: 5px;
+			font-family: 'Gotham-light';
+			font-size: 10px;
+			color: #fff;
+		}
+		p:last-child{
+			color: #e1b983;
+			font-family: 'Gotham-bold';
+			font-size: 14px;
+		}
+
+	}
+	.header-fb{
+		background-image: url(../img/fb-logo.png);
+		background-repeat: no-repeat;
+		height: 36px;
+		width: 36px;
+		font-size: 0;
+		position: relative;
+		left: 520px;
+		top: 30px;
+		@include transition(all 0.3s ease-in-out 0s);
+			
+		&:hover{
+			background-image: url(../img/fb-logo-hover.png);
+		}
+	}
+	.header-twitter{
+		@extend .header-fb;
+		background-image: url(../img/twitter-logo.png);
+	
+	&:hover{
+			background-image: url(../img/twitter-logo-hover.png);
+		}
+	}
+	.form-group{
+		margin-left: 530px;
+		margin-top: 50px;
+	}
+	#search{
+		height: 26px;
+		width: 125px;
+	}
+	.search {
+		background-image: url(../img/search_btn.png);
+		background-repeat: no-repeat;
+		width: 33px;
+		height: 26px;
+		font-size: 0;
+		position: relative;
+		top: -26px;
+		left: 123px;
+
+	}
+}

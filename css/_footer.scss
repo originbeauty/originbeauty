@@ -1,0 +1,61 @@
+.footer-wrapper{
+	padding: 20px;
+	background:{
+		image: url(../img/bg_footer.png);
+		size: 100% 100%;
+		repeat: repeat-y;
+	}
+	.breadcrumb{
+		background: none;
+		
+	}
+	h3{
+		color: #595959;
+		font-size: 14px;
+		font-family: 'Gotham-bold';
+		text-transform: uppercase;
+		margin-bottom: 40px;
+	}
+	ul > a > li{
+		margin-top: 10px;
+		color: #595959;
+		list-style-type: none;
+		font-size: 14px;
+		text-transform: capitalize;
+	}
+	.social {
+		h3{
+			margin-bottom: 0;
+		}
+		
+		a > p{
+			display: inline-block;
+		}
+		
+		.fb {
+			width: 28px;
+			height: 27px;
+			background-image: url(../img/f_fb.png);
+			font-size: 0;
+			&:hover {
+				background-image: url(../img/f_fb-h.png);
+			}
+		}
+
+		.twitter {
+			width: 28px;
+			height: 27px;
+			background-image: url(../img/f_tw.png);
+			font-size: 0;
+			&:hover {
+				background-image: url(../img/f_tw-h.png);
+			}
+		}
+	}
+	.info{
+		margin-top: 40px;
+		p > a{
+			color: #000;
+		}
+	}
+}

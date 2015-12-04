@@ -1,0 +1,41 @@
+.about-company{
+	padding: 20px;
+	background:{
+		image: url(../img/bg_about.png);
+		size: 100% 100%;
+		repeat: no-repeat;
+		//size:contain;
+	}
+	.about-text{
+		padding: 70px 0;
+		width: 570px;
+		h1{
+			font-size: 36px;
+			font-family: 'Gotham-bold';
+			color: #789c48;
+			text-transform: uppercase;
+			width: 420px;
+			margin-bottom: 35px;
+			span{
+				color: #333333;
+			}
+		}
+		p:nth-child(2){
+			font-size: 18px;
+			font-family: 'Gotham-bold';
+			line-height: 1.5;
+			text-align: justify;
+
+
+
+		}
+		p{
+			font-size: 16px;
+			font-family: 'Gotham-book';
+			color: #232323;
+			line-height: 1.5;
+			text-align: justify;
+			margin-top: 25px;
+		}
+	}
+}
